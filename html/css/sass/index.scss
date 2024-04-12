@@ -1,0 +1,156 @@
+@import "compass";
+@import "compass/reset";
+
+/**/
+@font-face {
+    font-family: "Yu Gothic", YuGothic;
+    font-weight: 500;
+}
+html,body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    text-align: center;
+    background-color: #eee;
+    color: #333;
+    line-height: 1.4em;
+}
+#msie {
+    display: none;
+    width: 70%;
+    text-align: left;
+    margin: 30px auto;
+    border: 5px solid #ccc;
+    padding: 30px;
+}
+#container {
+    text-align: center;
+    padding: 20px 10px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bolder;
+}
+h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+.content {
+    width: 95%;
+    text-align: left;
+    margin: 0px auto;
+    > * {
+        margin: 20px 0px;
+    }
+    > ol,
+    > ul {
+        margin-left: 2em;
+    }
+}
+ol {
+    list-style: decimal;
+}
+ul {
+    list-style: circle;
+}
+.menu {
+    text-align: center;
+}
+.date {
+    font-size: small;
+    font-weight: bold;
+}
+.copyright {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.pon_display {
+    width: 95%;
+    text-align: center;
+    background-color: #ccc;
+    margin: 30px auto;
+    border: 1px solid #999;
+    > .block {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    label > input[type="radio"] {
+        display: none;
+        &:checked + span {
+            background-color: #333;
+        }
+        + span {
+            cursor: pointer;
+            display: inline-block;
+            @include border-radius(6px);
+            color: #fff;
+            line-height: 36px;
+            padding: 0 10px;
+            background-color: #999;
+            font-size: 13px;
+        }
+    }
+}
+.pon_input {
+    width: 100%;
+    height: 5em;
+    resize: vertical;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+.pon_button {
+    cursor: pointer;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #00608C;
+    @include background-image(linear-gradient(top, #006391 0%, #1275a3 48%, #00608C 49%, #00608C 82%, #0073a8 100%));
+    border-color: hsl(199, 38%, 27%);
+    @include box-shadow(inset 0 0 1px 1px #009be3, 0 0 1px 3px rgba(0, 0, 0, 0.15));
+    @include text-shadow(1px 1px 1px #001a26);
+    @include border-radius(25px);
+    padding: 12px 30px 12px 30px;
+    outline: none;
+    &:active {
+        @include box-shadow(none);
+    }
+}
+.pon_window {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #424747;
+    @include background-image(linear-gradient(to bottom,  #424747 0%,#292b2b 50%,#090c0c 51%,#060707 100%));
+
+}
+.pon_column {
+    width: 100%;
+    position: relative;
+    top: 0px;
+}
+.pon_item {
+    display: table;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #fff;
+    > span {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 50px;
+    }
+}

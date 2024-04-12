@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**/
+@font-face {
+  font-family: "Yu Gothic", YuGothic;
+  font-weight: 500;
+}
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  text-align: center;
+  background-color: #eee;
+  color: #333;
+  line-height: 1.4em;
+}
+
+#msie {
+  display: none;
+  width: 70%;
+  text-align: left;
+  margin: 30px auto;
+  border: 5px solid #ccc;
+  padding: 30px;
+}
+
+#container {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.content {
+  width: 95%;
+  text-align: left;
+  margin: 0px auto;
+}
+.content > * {
+  margin: 20px 0px;
+}
+.content > ol,
+.content > ul {
+  margin-left: 2em;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: circle;
+}
+
+.menu {
+  text-align: center;
+}
+
+.date {
+  font-size: small;
+  font-weight: bold;
+}
+
+.copyright {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: small;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+.pon_display {
+  width: 95%;
+  text-align: center;
+  background-color: #ccc;
+  margin: 30px auto;
+  border: 1px solid #999;
+}
+.pon_display > .block {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 600px;
+}
+.pon_display label > input[type="radio"] {
+  display: none;
+}
+.pon_display label > input[type="radio"]:checked + span {
+  background-color: #333;
+}
+.pon_display label > input[type="radio"] + span {
+  cursor: pointer;
+  display: inline-block;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  line-height: 36px;
+  padding: 0 10px;
+  background-color: #999;
+  font-size: 13px;
+}
+
+.pon_input {
+  width: 100%;
+  height: 5em;
+  resize: vertical;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.pon_button {
+  cursor: pointer;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  text-decoration: none;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background-color: #00608C;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjM5MSIvPjxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjMTI3NWEzIi8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiMwMDYwOGMiLz48c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iIzAwNjA4YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNzNhOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006391), color-stop(48%, #1275a3), color-stop(49%, #00608c), color-stop(82%, #00608c), color-stop(100%, #0073a8));
+  background-image: -moz-linear-gradient(top, #006391 0%, #1275a3 48%, #00608c 49%, #00608c 82%, #0073a8 100%);
+  background-image: -webkit-linear-gradient(top, #006391 0%, #1275a3 48%, #00608c 49%, #00608c 82%, #0073a8 100%);
+  background-image: linear-gradient(to bottom, #006391 0%, #1275a3 48%, #00608c 49%, #00608c 82%, #0073a8 100%);
+  border-color: #2b4e5f;
+  -moz-box-shadow: inset 0 0 1px 1px #009be3, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 1px 1px #009be3, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 1px 1px #009be3, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-shadow: 1px 1px 1px #001a26;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 12px 30px 12px 30px;
+  outline: none;
+}
+.pon_button:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pon_window {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background: #424747;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyNDc0NyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjkyYjJiIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMwOTBjMGMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjA3MDciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #424747), color-stop(50%, #292b2b), color-stop(51%, #090c0c), color-stop(100%, #060707));
+  background-image: -moz-linear-gradient(top, #424747 0%, #292b2b 50%, #090c0c 51%, #060707 100%);
+  background-image: -webkit-linear-gradient(top, #424747 0%, #292b2b 50%, #090c0c 51%, #060707 100%);
+  background-image: linear-gradient(to bottom, #424747 0%, #292b2b 50%, #090c0c 51%, #060707 100%);
+}
+
+.pon_column {
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.pon_item {
+  display: table;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  overflow: hidden;
+  color: #fff;
+}
+.pon_item > span {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+}
+
+/*# sourceMappingURL=index.css.map */
